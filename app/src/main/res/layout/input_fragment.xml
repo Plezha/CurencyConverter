@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InputFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/textview_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/padding_medium"
+            android:text="@string/amount"
+            style="@style/heading_2"
+            />
+
+        <EditText
+            android:id="@+id/currency_amount_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="false"
+            android:hint="@string/currency_amount"
+            android:background="@drawable/rounded_corners_medium"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/textview_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/padding_large"
+            android:paddingVertical="@dimen/padding_medium"
+            android:text="@string/from"
+            style="@style/heading_2"
+            />
+
+        <TextView
+            android:id="@+id/edittext_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/from_hint"
+            android:background="@drawable/rounded_corners_medium"
+            style="@style/Widget.AppCompat.EditText"
+            />
+
+
+        <TextView
+            android:id="@+id/textview_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:paddingVertical="@dimen/padding_medium"
+            android:text="@string/to"
+            style="@style/heading_2"
+            />
+
+        <TextView
+            android:id="@+id/edittext_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/to_hint"
+            android:background="@drawable/rounded_corners_medium"
+            style="@style/Widget.AppCompat.EditText"
+            />
+
+        <Button
+            android:id="@+id/convert_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/convert"
+            android:layout_marginTop="@dimen/padding_large"
+            android:background="@drawable/rounded_corners_medium"
+            style="@style/heading_2"
+            />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

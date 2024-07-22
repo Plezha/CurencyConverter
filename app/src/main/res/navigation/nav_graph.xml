@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/InputFragment">
+
+    <fragment
+        android:id="@+id/InputFragment"
+        android:name="com.plezha.mycurrencyconverter.ui.InputFragment"
+        android:label="@string/input_fragment_label"
+        tools:layout="@layout/input_fragment">
+
+        <action
+            android:id="@+id/action_InputFragment_to_ResultFragment"
+            app:destination="@id/ResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.plezha.mycurrencyconverter.ui.ResultFragment"
+        android:label="@string/result_fragment_label"
+        tools:layout="@layout/result_fragment">
+
+        <action
+            android:id="@+id/action_ResultFragment_to_InputFragment"
+            app:destination="@id/InputFragment" />
+    </fragment>
+</navigation>

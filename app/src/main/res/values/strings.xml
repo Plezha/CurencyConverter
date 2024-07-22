@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyCurrencyConverter</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="input_fragment_label">Convert Currency</string>
+    <string name="result_fragment_label">Conversion Results</string>
+
+    <string name="currency_amount">Currency amount</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="from_hint">Choose currency to convert from</string>
+    <string name="to_hint">Choose currency to convert to</string>
+    <string name="convert">Convert!</string>
+    <string name="amount">Amount</string>
+    <string name="modify">Modify</string>
+    <string name="new_conversion">New Conversion</string>
+    <string name="inputUnfilledFieldsError">At least one field is not filled!</string>
+</resources>
