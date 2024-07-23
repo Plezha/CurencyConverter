@@ -54,7 +54,8 @@ class ResultFragment : Fragment() {
         mainActivityViewModel.convertedAmount.observe(viewLifecycleOwner) {
             binding.textviewCurrencyToAmount.text = "${chosenCurrencyTo.symbol} $it"
         }
-        binding.textviewCurrencyToAmount.text
+        binding.textviewCurrencyToAmount.text =
+            "${chosenCurrencyFrom.symbol} ${0.0}"
 
         binding.newConversionButton.setOnClickListener {
             mainActivityViewModel.amount = null
